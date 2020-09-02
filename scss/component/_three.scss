@@ -1,0 +1,32 @@
+#three{
+
+    .three__title{
+      font-size: 30px;
+      color: $clr-five;
+      margin: 0;
+    }
+
+    p{
+        font-family: $montserrat;
+        font-size: 21px;
+    }
+
+    p:not(.me){
+       margin: 3.5rem 0 3.5rem 0;
+    }
+
+    .box + .box{
+        margin-top: 3rem;
+    }
+
+    .box{
+        padding: 32px;
+        background: $clr-two;
+        text-align: center;
+
+        h3,p{
+             color: $clr-four;
+        }
+       
+    }
+}

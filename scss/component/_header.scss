@@ -1,0 +1,27 @@
+header {
+    display: none;
+    background: $clr-one;
+    font-size: 18px;
+    padding: 1rem 0;
+
+    .row{
+        padding: 0 0 0 0;
+    }
+
+    .nav {
+        
+
+        .nav__list {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav__link {
+            color: $clr-four;
+        }
+
+        .cta {
+            @extend %btn;
+        }
+    }
+}

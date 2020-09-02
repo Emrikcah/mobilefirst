@@ -1,0 +1,39 @@
+footer {
+    font-family: $montserrat;
+    background: $clr-two;
+    color: $clr-four;
+    padding-top: 30px;
+
+    h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 21px;
+        
+        margin-bottom: 10px;
+    }
+
+    h2,
+    h3 {
+        font-family: $oswald;
+        color: $clr-five;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    ul {
+        padding: 0;
+
+        a {
+            color: $clr-three;
+        }
+    }
+
+        .row {
+        padding-top: 0;
+    }
+}

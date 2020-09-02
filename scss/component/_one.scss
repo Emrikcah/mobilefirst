@@ -1,0 +1,20 @@
+#one {
+    background: $clr-two;
+    color: $clr-four;
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .one__title--clr {
+        color: $clr-five;
+    }
+
+    p {
+        font-family: $montserrat;
+    }
+
+    a {
+        @extend %btn;
+    }
+}
