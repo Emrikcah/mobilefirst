@@ -60,7 +60,7 @@
         }
     }
     footer {
-        .footer__title {
+        .footer__title-container {
             text-align: center;
         }
         .row {
@@ -117,7 +117,37 @@
         }
     }
     #three {
+        .row{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 100px;
+
+            .flex{
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
     footer {
+
+        .footer__title{
+            font-family: $oswald;
+            font-size: 40px;
+        }
+
+       .row{
+           display: flex;
+           align-items: center;
+          
+           
+
+           .footerbox{
+            margin: 0;
+           }
+
+           .links{
+             width: 100%;
+           }
+       }
     }
 }

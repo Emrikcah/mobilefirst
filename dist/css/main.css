@@ -214,7 +214,7 @@ footer .row {
   #three .box + .box {
     margin-top: 0;
   }
-  footer .footer__title {
+  footer .footer__title-container {
     text-align: center;
   }
   footer .row .footerbox {
@@ -254,5 +254,28 @@ footer .row {
   #two .row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  #three .row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 100px;
+  }
+  #three .row .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+  }
+  footer .row {
+    display: flex;
+    align-items: center;
+  }
+  footer .row .footerbox {
+    margin: 0;
+  }
+  footer .row .links {
+    width: 100%;
   }
 }
