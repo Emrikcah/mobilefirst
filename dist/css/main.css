@@ -203,6 +203,10 @@ footer .row {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
+  #three .image img {
+    min-width: 552px;
+    height: 300px;
+  }
   #three .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -259,6 +263,10 @@ footer .row {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 100px;
+  }
+  #three .row .image img {
+    min-width: 552px;
+    height: auto;
   }
   #three .row .flex {
     display: flex;
