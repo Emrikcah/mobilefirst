@@ -1,0 +1,37 @@
+@media (min-width: $tablet) {
+  header {
+    display: block;
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .nav-toggle {
+        display: none;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav__item {
+        display: inline-block;
+        padding: 0 20px;
+      }
+    }
+  }
+}
+@media (min-width: $desktop) {
+  header {
+    .flex {
+      flex-direction: row;
+      align-items: center;
+
+      .nav {
+        margin-left: auto;
+      }
+    }
+  }
+}

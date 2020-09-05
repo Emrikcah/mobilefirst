@@ -69,6 +69,38 @@ header .nav .nav__link {
   color: #fff;
 }
 
+@media (min-width: 700px) {
+  header {
+    display: block;
+  }
+  header .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .flex .nav-toggle {
+    display: none;
+  }
+  header .flex .nav {
+    display: flex;
+    align-items: center;
+  }
+  header .flex .nav__item {
+    display: inline-block;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  header .flex {
+    flex-direction: row;
+    align-items: center;
+  }
+  header .flex .nav {
+    margin-left: auto;
+  }
+}
+
 #one {
   background: #3b4050;
   color: #fff;
@@ -169,25 +201,6 @@ footer .row {
 }
 
 @media (min-width: 700px) {
-  header {
-    display: block;
-  }
-  header .flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  header .flex .nav-toggle {
-    display: none;
-  }
-  header .flex .nav {
-    display: flex;
-    align-items: center;
-  }
-  header .flex .nav__item {
-    display: inline-block;
-    padding: 0 20px;
-  }
   #one .row {
     margin: 0 auto;
     max-width: 700px;
@@ -234,13 +247,6 @@ footer .row {
 }
 
 @media (min-width: 1000px) {
-  header .flex {
-    flex-direction: row;
-    align-items: center;
-  }
-  header .flex .nav {
-    margin-left: auto;
-  }
   #one .row {
     display: flex;
     align-items: flex-end;
