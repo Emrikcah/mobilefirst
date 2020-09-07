@@ -50,29 +50,108 @@ img {
 }
 
 header {
-  display: none;
   background: #2e323f;
   font-size: 18px;
   padding: 1rem 0;
+  text-align: center;
+  z-index: 100;
+}
+
+header img {
+  width: 55px;
 }
 
 header .row {
   padding: 0 0 0 0;
 }
 
+header .container {
+  position: relative;
+}
+
+header .container .nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #072a2d;
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+header .nav-toggle:focus,
+header .nav-toggle:hover {
+  opacity: 0.75;
+}
+
+header .hamburger {
+  width: 50%;
+  position: relative;
+}
+
+header .hamburger::before, header .hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+header .hamburger,
+header .hamburger::before,
+header .hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 2px;
+  background: white;
+}
+
+header .hamburger::before {
+  transform: translateY(-6px);
+}
+
+header .hamburger::after {
+  transform: translateY(3px);
+}
+
+header .nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+header .nav {
+  background: red;
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
 header .nav .nav__list {
   margin: 0;
   padding: 0;
+  font-size: 1rem;
+}
+
+header .nav .nav__item {
+  margin-top: 0.75rem;
 }
 
 header .nav .nav__link {
   color: #fff;
+  text-transform: uppercase;
+}
+
+header .nav .nav__link:hover, header .nav .nav__link:focus {
+  opacity: 0.75;
+}
+
+header .nav .cta {
+  padding: 4px 16px;
 }
 
 @media (min-width: 700px) {
-  header {
-    display: block;
-  }
   header .flex {
     display: flex;
     flex-direction: column;
@@ -84,6 +163,9 @@ header .nav .nav__link {
   header .flex .nav {
     display: flex;
     align-items: center;
+    visibility: visible;
+    position: static;
+    height: auto;
   }
   header .flex .nav__item {
     display: inline-block;
