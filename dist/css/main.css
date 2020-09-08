@@ -14,6 +14,49 @@ header .nav .cta:hover, #one a:hover {
   transform: scale(0.98);
 }
 
+header .container .nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #072a2d;
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+header .container .nav-toggle:focus, header .container .nav-toggle:hover {
+  opacity: 0.75;
+}
+
+header .container .nav-toggle .hamburger {
+  width: 50%;
+  position: relative;
+}
+
+header .container .nav-toggle .hamburger::before, header .container .nav-toggle .hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+header .container .nav-toggle .hamburger::before {
+  transform: translateY(-6px);
+}
+
+header .container .nav-toggle .hamburger::after {
+  transform: translateY(3px);
+}
+
+header .container .nav-toggle .hamburger, header .container .nav-toggle .hamburger::before, header .container .nav-toggle .hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 2px;
+  background: white;
+}
+
 *,
 *::before,
 *::after {
@@ -69,60 +112,13 @@ header .container {
   position: relative;
 }
 
-header .container .nav-toggle {
-  cursor: pointer;
-  border: 0;
-  width: 3em;
-  height: 3em;
-  padding: 0em;
-  border-radius: 50%;
-  background: #072a2d;
-  transition: opacity 250ms ease;
-  position: absolute;
-  left: 0;
-  top: -3px;
-}
-
-header .nav-toggle:focus,
-header .nav-toggle:hover {
-  opacity: 0.75;
-}
-
-header .hamburger {
-  width: 50%;
-  position: relative;
-}
-
-header .hamburger::before, header .hamburger::after {
-  content: "";
-  width: 100%;
-}
-
-header .hamburger,
-header .hamburger::before,
-header .hamburger::after {
-  display: block;
-  margin: 0 auto;
-  height: 2px;
-  background: white;
-}
-
-header .hamburger::before {
-  transform: translateY(-6px);
-}
-
-header .hamburger::after {
-  transform: translateY(3px);
-}
-
-header .nav--visible {
+header .container .nav--visible {
   visibility: visible;
   height: auto;
   position: relative;
 }
 
 header .nav {
-  background: red;
   visibility: hidden;
   height: 0;
   position: absolute;
@@ -167,9 +163,10 @@ header .nav .cta {
     position: static;
     height: auto;
   }
-  header .flex .nav__item {
+  header .flex .nav .nav__item {
     display: inline-block;
     padding: 0 20px;
+    margin-top: 0;
   }
 }
 
